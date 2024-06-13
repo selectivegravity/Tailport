@@ -1,0 +1,10 @@
+<!-- project.html -->
+<template>
+    <div class="flex flex-col gap-y-10">
+        <template for:each={projects} for:item="project">
+            <div key={project.title}>
+                <c-project-card project={project}></c-project-card>
+            </div>
+        </template>
+    </div>
+</template>

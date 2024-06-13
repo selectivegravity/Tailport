@@ -1,0 +1,32 @@
+<!-- <template>
+    <div id="experience-section" class="mb-8">
+      <h2 class="text-2xl font-bold mb-4">Experience</h2>
+      <div class="space-y-4">
+        <div class="bg-gray-100 p-4 rounded shadow">
+          <h3 class="text-xl font-semibold">Company ABC</h3>
+          <p class="text-gray-600">Software Engineer</p>
+          <p class="text-gray-600">2019 - Present</p>
+          <p class="text-gray-700 mt-2">Worked on developing and maintaining web applications. Used technologies such as JavaScript, Apex, LWC, and Salesforce.</p>
+          <p class="text-gray-700 mt-2">Tech Stack: JavaScript, Apex, LWC, Salesforce</p>
+        </div>
+        <div class="bg-gray-100 p-4 rounded shadow">
+          <h3 class="text-xl font-semibold">Company XYZ</h3>
+          <p class="text-gray-600">Junior Developer</p>
+          <p class="text-gray-600">2017 - 2019</p>
+          <p class="text-gray-700 mt-2">Assisted in developing web applications and APIs. Used technologies such as Java, Spring, and MySQL.</p>
+          <p class="text-gray-700 mt-2">Tech Stack: Java, Spring, MySQL</p>
+        </div>
+      </div>
+    </div>
+  </template> -->
+
+  <template>
+    <div class="flex flex-col gap-y-10">
+      <template for:each={Experience} for:item="emp">
+        <div key={emp.id}>
+          <c-experience-card experience={emp}></c-experience-card>
+        </div>
+      </template>
+    </div>
+  </template>
+  

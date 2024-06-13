@@ -1,0 +1,55 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Portfolio",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"b771358d-67e6-47c6-b79f-3bb86b25a1e1\",\"columns\":[{\"UUID\":\"bf3e493a-4b76-4d06-be32-5e433d0061ef\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":null}]}"
+          },
+          "children" : [ {
+            "id" : "bf3e493a-4b76-4d06-be32-5e433d0061ef",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "b771358d-67e6-47c6-b79f-3bb86b25a1e1",
+          "type" : "component"
+        } ],
+        "id" : "a1797ca5-ba87-4c41-8325-1e57ac99445d",
+        "name" : "content",
+        "title" : "Content",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "customHeadTags" : "<link rel=\"icon\" type=\"image/png\" href=\"@salesforce/resourceUrl/Images/gmail.png\" sizes=\"96x96\">",
+            "description" : "Welcome to Abhishek's Portfolio",
+            "pageTitle" : "Portfolio",
+            "recordId" : "{!recordId}"
+          },
+          "definition" : "community_builder:seoAssistant",
+          "id" : "0ea56faa-0c59-4092-bdb3-85c7b7c587a5",
+          "type" : "component"
+        } ],
+        "id" : "ca556289-b4d4-49a8-8ed0-c8c63f0a0e64",
+        "name" : "sfdcHiddenRegion",
+        "title" : "sfdcHiddenRegion",
+        "type" : "region"
+      } ],
+      "definition" : "community_layout:sldsFlexibleLayout",
+      "id" : "fa6d145f-f9a1-4b83-b08a-fcac36a2fc0b",
+      "type" : "component"
+    },
+    "dataProviders" : [ ],
+    "themeLayoutType" : "Inner",
+    "viewType" : "home"
+  }
+}

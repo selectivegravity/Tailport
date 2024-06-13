@@ -1,0 +1,25 @@
+<template>
+    <div class="mx-1 my-2 flex lg:flex-row flex-col lg:gap-5 justify-between items-start border-2 rounded-lg border-transparent overflow-hidden opacity-25 hover:opacity-100 p-8 hover:shadow-lg transition duration-300 ease-in-out">
+        <!-- Image Section -->
+        <div class="w-full md:w-1/2 p-2 flex items-center justify-center relative">
+            <img src={project.image} alt={project.description} class="w-full h-32 object-cover rounded-lg opacity-50" />
+            <div class="absolute inset-0 flex items-center justify-center gap-2">
+                <button class="cursor-pointer border border-teal-300 rounded-full font-medium text-gray-100 hover:text-teal-300 px-3 py-2 mx-2 my-1">Source</button>
+                <button class="cursor-pointer bg-gray-300 rounded-full font-medium text-gray-900 hover:text-gray-300 hover:bg-gray-900 px-3 py-2 mx-2 my-1">Go Live</button>
+            </div>
+        </div>
+
+        <!-- Details Section -->
+        <div class="w-full md:w-1/2 p-2 flex flex-col justify-center">
+            <div class="text-base md:text-lg lg:text-xl font-bold mb-2 text-teal-300">{project.title}</div>
+            <div class="text-sm lg:text-base text-gray-100 mb-4">{project.description}</div>
+            <div class="flex flex-wrap space-x-2">
+                <template for:each={project.tech} for:item="tech">
+                    <span key={tech} class="my-1 bg-cyan-900 mr-4 py-1 px-2 text-teal-300 rounded-full text-xs md:text-sm lg:text-sm w-[80px] hover:shadow-lg transition duration-300 ease-in-out break-words overflow-hidden">
+                        {tech}
+                    </span>
+                </template>
+            </div>
+        </div>
+    </div>
+</template>

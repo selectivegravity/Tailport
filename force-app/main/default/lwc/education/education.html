@@ -1,0 +1,9 @@
+<template>
+    <div class="flex flex-col gap-y-10">
+        <template for:each={Education} for:item="edu">
+            <div key={edu.id}>
+                <c-education-card education={edu}></c-education-card>
+            </div>
+        </template>
+    </div>
+</template>
